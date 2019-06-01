@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/autobind.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .action {
+        margin-left: 0;
+        transition: margin-left 5s;
+      }
+
+      .animated .action {
+        margin-left: 50%;
+      }
+
+      .blurb {
+        background-color: #fff;
+        color: #000;
+        transition: background-color 2s, color 1s;
+      }
+
+      .blurb.highlight {
+        background-color: #cc30cc;
+        color: #fff;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Autobind.js examples</h1>
+    <h3>Toggle classes directly on an element.</h3>
+    <p class="blurb">This is a button with autobind attributes bound to <em>click</em> event.</p>
+    <p class="action"><button data-autobind="click" data-autobind-classes="btn-primary btn-secondary" class="btn btn-primary">Change me!</button></p>
+
+    <h3>Toggle a body class</h3>
+    <p class="blurb">This is a link with autobind attributes bound to <em>click</em> event. Default link click behaviour prevented.</p>
+    <p class="action"><a href="#" data-autobind="click" data-autobind-prevent data-autobind-classes="animated" data-autobind-selector="body" class="btn btn-primary">Animate!</a></p>
+
+    <h3>Toggle classes on a collection of elements</h3>
+    <p class="blurb">This is a button with autobind attributes bound to <em>mouseenter</em> and <em>mouseleave</em> events.</p>
+    <p class="action"><button data-autobind="mouseenter mouseleave" data-autobind-prevent data-autobind-classes="highlight" data-autobind-selector=".blurb" class="btn btn-primary">Highlight!</button></p>
+  </body>
+</html>
