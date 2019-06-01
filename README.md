@@ -5,6 +5,9 @@ You just add some attributes to HTML elements to describe the
 behaviour and classes will be toggled on specified elements 
 based on events, such as click or hover. 
 
+See example here:
+https://very-random-man.github.io/autobind.js/example.html
+
 ## How to set up
 Just add the script in the HEAD tag, after jQuery has been included.
 ```
