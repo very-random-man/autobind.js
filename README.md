@@ -1,5 +1,5 @@
 # Autobind.js
-This is a really simple bit of jQuery code to I created to make it
+This is a really simple bit of jQuery code I created to make it
 super-easy to facilitate CSS transitions from user interactions. 
 You just add some attributes to HTML elements to describe the 
 behaviour and classes will be toggled on specified elements 
